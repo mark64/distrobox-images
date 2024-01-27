@@ -1,9 +1,6 @@
 # Based on a combination of the github docker-publish.yml and https://github.com/docker/build-push-action/issues/561#issuecomment-1054596444
 name: Build & publish distrobox images
 on:
-  schedule:
-    # Run a nighly build.
-    - cron: '23 21 * * *'
   push:
     # Run on push to main.
     branches: [ "main" ]
